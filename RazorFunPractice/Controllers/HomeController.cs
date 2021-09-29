@@ -6,7 +6,7 @@ namespace RazorFunPractice.Controllers
     public class HomeController : Controller
     {
         [HttpGet]
-        [Route("index")]
+        [Route("/")]
         public ViewResult Index()
         {
             // This will serve //Views/Home/Index.cshtml

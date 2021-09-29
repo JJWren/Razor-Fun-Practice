@@ -10,26 +10,19 @@
 
 <body>
     <h1>Here are some delicious foods!</h1>
-    @{
-        List<string> foods = new List<string>
-    {
-    "Apple Pie",
-    "Burritos",
-    "Clams Casino",
-    "Donuts"
-    };
-    }
-
     <ul>
-        @foreach (var food in foods)
-        {
-            @if (ToLower(food[0]) == "c")
+        @{
+            string[] foods = { "Apple Pie", "Burritos", "Clams Casino", "Donuts" };
+            foreach (string food in foods)
             {
-                <li style="color:red;">@food</li>
-            }
-            else
-            {
-                <li>@food</li>
+                if (food[0] == 'C' || food[0] == 'c')
+                {
+                    <li style="color:red;">@food</li>
+                }
+                else
+                {
+                    <li>@food</li>
+                }
             }
         }
     </ul>
