@@ -1,4 +1,4 @@
-#To run the program:
+# To run the program:
 
 If you're new to dotnet, once you download the project,
 navigate in your terminal to the directory in which the csproj file resides in.
@@ -8,7 +8,7 @@ You can use `Ctrl+C` in the terminal again to end the connection for the local h
 
 If you're editing the project, `dotnet watch run` will give you a live server that will refresh on file save.
 
-##Project tidbits:
+## Project tidbits:
 
 This project was just me refreshing myself on using Razor again after working with console and windows forms
 over a long period of time.
